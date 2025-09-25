@@ -9,17 +9,17 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: black;
             color: white;
-            margin: 0;
-            padding: 0;
+            margin: 1;
+            padding: 1;
             line-height: 1.6;
         }
         
-        header {
+        #header {
             background: linear-gradient(135deg, lab(36.34% -42.09 41.14) 0%, #764ba2 100%);
             color: #b4cdcc;
             padding: 20px 0;
             text-align: center;
-        }
+        } 
         
         nav {
             background-color: #34495e;
@@ -44,7 +44,7 @@
         }
         
         nav a:hover {
-            color: #ffd700;
+            color: hsl(38, 88%, 41%);
         }
         
         main {
@@ -126,11 +126,27 @@
             display: inline-block;
             margin: 10px 0;
         }
+
+        .external-link:hover{
+            color: hsl(302, 78%, 29%);
+        }
+
+        .image-link:hover{
+            color: hsl(302, 78%, 29%);
+        }
+
+        .left-picture {
+            float: left;
+            margin: 0 10px 5px 0; 
+            text-align: center;
+            border: 1px solid black;
+        } 
+
     </style>
 </head>
 
 <body>
-    <header>
+    <div id ="header"> <!--ID Селектор-->
         <h1>О Сериале</h1>
     <nav>
         <ul>
@@ -138,8 +154,7 @@
             <li><a href="page2.html">Интересные Факты и Сюжет</a></li>
         </ul>
     </nav>
-
-    </header>
+    </div>
     
     <main>
         
@@ -149,6 +164,12 @@
                 <h2>Американская телевизионная криминальная драма, 
                     премьерные серии которой транслировались с 20 января 2008 года 
                     по 29 сентября 2013 года по кабельному каналу AMC</h2>
+
+                <div class="left-picture">
+                <img src="img/BrBd_logo.png" width="200">
+                <div>Логотип сериала</div>
+                </div>
+
             </section>
         
             <section>
@@ -192,7 +213,7 @@
 
         <aside> 
             <h3>Многожанровость</h3>
-            <p>Сериал относят к таким жанрам как:</p>
+            <p style="color:#e74c3c">Сериал относят к таким жанрам как:</p>
             <ul>
                 <li>Криминальная Драма</li>
                 <li>Триллер</li>
